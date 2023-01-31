@@ -1,26 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// import { useAppDispatch } from './store/config';
+// import { UserService } from './services/userService';
+import Counter from './screens/Counter';
+import Todo from './screens/Todo';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	// const dispatch = useAppDispatch();
+
+	// const getUser = async () => {
+	// 	dispatch(UserService.getUser('1'));
+	// };
+
+	return (
+		<>
+			<Counter />
+			<hr />
+			<Todo />
+		</>
+	);
 }
 
 export default App;
